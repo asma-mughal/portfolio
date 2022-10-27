@@ -17,7 +17,7 @@ const Carousel = ({ images }) => {
   };
    
   return (
-    <div name="services">
+    <div name="projects" id="projects">
     <Slider {...settings}
     style={{
       backgroundColor:'white'

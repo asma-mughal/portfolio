@@ -13,7 +13,7 @@ const Clients = () => {
   };
   return (
    <>
-     <div name="about"  className="w-full pt-10 border-0" style={{
+     <div name="about" id="about"  className="w-full pt-10 border-0" style={{
       backgroundColor:'#F4F4F4'
      }}>
         <div className=" text-center">

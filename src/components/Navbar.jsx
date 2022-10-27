@@ -1,6 +1,7 @@
 import React from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa'
 import { useNavigate  } from 'react-router-dom';
+import { Link,animateScroll as scroll} from 'react-scroll'
 const Navbar = ({color, setColor,click,setClick}) => {
   const navigate = useNavigate();
     const handleClick = () => setClick(!click)
@@ -59,17 +60,24 @@ const Navbar = ({color, setColor,click,setClick}) => {
                 <ul className={click ? "nav-menu active"  : " nav-menu"}>
                     
                     {links.map((i)=>
-                    
-                    <li  
-                    onClick={()=> {setClick(!click)
-                      handleClick2(i.link)
-                    }
-                    }
+       
+                    <li
                     className={`p-4  ${color? 'text-gray-400' : 'text-white'}
                     ${color? 'hover:text-black' : 'hover:font-bold'}
                       font-semibold  uppercase text-sm duration-200 cursor-pointer`}>
- 
-                    {i.link}</li>)}
+                  <Link  
+                 onClick={()=> {setClick(!click)
+                  handleClick2(i.link)
+                }}
+                  style={{
+                    color : color && '#9ca3af'
+                  }}
+                  activeClass='active'
+                  smooth spy to={i.link}>
+                    {i.link}
+                    </Link>
+                    </li>
+                    )}
                   
                 </ul>
             </nav>

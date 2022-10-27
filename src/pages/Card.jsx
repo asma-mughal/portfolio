@@ -60,7 +60,7 @@ const Card = () => {
       ];
   return (
     <>
-    <div name="about">
+    <div name="services" id="services">
     <PageSection
     name="Mentor"
     title="Instructor"

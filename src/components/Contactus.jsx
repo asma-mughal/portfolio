@@ -22,7 +22,7 @@ setLoading(true)
     };
     
   return (
-    <section class=" z-10 overflow-hidden bg-white ">
+    <section class=" z-10 overflow-hidden bg-white "name="contact" id="contact"  >
       <div class="container mx-auto items-center p-10">
 
         <div class="-mx-4 flex flex-wrap lg:justify-between">

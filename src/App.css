@@ -267,3 +267,6 @@
   
   color: #a21caf !important;
 }
+.active { 
+  color: black !important;
+}
